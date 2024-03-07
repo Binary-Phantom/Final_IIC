@@ -75,7 +75,7 @@ df = pd.read_csv(url,sep=',')
 
 
 # Remova as 70 mil linhas
-df_reduzido = df.iloc[:-70000]
+df_reduzido = df.iloc[:-95000]
 
 # Exiba a forma (número de linhas e colunas) do DataFrame reduzido
 print(df_reduzido.shape)
@@ -87,7 +87,7 @@ url = 'https://drive.google.com/file/d/1utKL4qufR0OmACaAeNubINH5n-Vkb4U2/view?us
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df2 = pd.read_csv(url,sep=',')
 # Remova as 70 mil linhas
-df2_reduzido = df2.iloc[:-15000]
+df2_reduzido = df2.iloc[:-40000]
 
 # Exiba a forma (número de linhas e colunas) do DataFrame reduzido
 print(df2_reduzido.shape)

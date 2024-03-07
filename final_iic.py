@@ -20,7 +20,7 @@ import sklearn.metrics.pairwise as pw
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse import csr_matrix
-st.set_option('server.maxMessageSize', 1000)
+#st.set_option('server.maxMessageSize', 1000)
 #pip install fuzzywuzzy
 #from fuzzywuzzy import process
 #from fuzzywuzzy import fuzz

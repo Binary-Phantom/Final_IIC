@@ -9,16 +9,18 @@ Original file is located at
 #IMPORTAÇÃO DE DEPENDÊNCIAS
 """
 
-import pandas as pd
+#import pandas as pd
+import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import NearestNeighbors
-import numpy as np
+#import numpy as np
 from sklearn.metrics import accuracy_score
 import sklearn.metrics.pairwise as pw
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.sparse import csr_matrix
+st.set_option('server.maxMessageSize', 1000)
 #pip install fuzzywuzzy
 #from fuzzywuzzy import process
 #from fuzzywuzzy import fuzz

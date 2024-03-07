@@ -10,8 +10,8 @@ Original file is located at
 """
 
 #import pandas as pd
-import streamlit as st
 st.set_option('server.maxMessageSize', 1000)
+import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.neighbors import NearestNeighbors

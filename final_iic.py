@@ -20,7 +20,7 @@ from sklearn.metrics import accuracy_score
 import sklearn.metrics.pairwise as pw
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from scipy.sparse import csr_matrix
+#from scipy.sparse import csr_matrix
 #st.set_option('server.maxMessageSize', 1000)
 #pip install fuzzywuzzy
 #from fuzzywuzzy import process
@@ -69,13 +69,30 @@ df_nota.shape
 
 """#LIMPEZA DE DADOS"""
 
-duplicados = df_filme[df_filme.duplicated(keep='first')]
-print(duplicados)
+url = 'https://drive.google.com/file/d/1nrzhbmeK5OTEoqiCQ5lsayk8_q3FLnQc/view?usp=sharing'
+url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+df = pd.read_csv(url,sep=',')
 
-df_filme_set = set(df_filme['movieId'])
-df_nota_set = set(df_nota['movieId'])
 
-df_nota.drop_duplicates(subset ='movieId', keep='first', inplace=True)
+# Remova as 70 mil linhas
+df_reduzido = df.iloc[:-70000]
+
+# Exiba a forma (número de linhas e colunas) do DataFrame reduzido
+print(df_reduzido.shape)
+
+df_notas = df
+
+
+url = 'https://drive.google.com/file/d/1utKL4qufR0OmACaAeNubINH5n-Vkb4U2/view?usp=sharing'
+url='https://drive.google.com/uc?id=' + url.split('/')[-2]
+df2 = pd.read_csv(url,sep=',')
+# Remova as 70 mil linhas
+df2_reduzido = df2.iloc[:-15000]
+
+# Exiba a forma (número de linhas e colunas) do DataFrame reduzido
+print(df2_reduzido.shape)
+
+df_tag = df2_reduzido
 
 """#COMBINANDO DATAFRAMES"""
 

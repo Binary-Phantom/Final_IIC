@@ -34,7 +34,7 @@ df_filme = pd.read_csv(url,sep=',')
 
 """##Notas"""
 
-url = 'https://drive.google.com/file/d/1nrzhbmeK5OTEoqiCQ5lsayk8_q3FLnQc/view?usp=sharing'
+url = 'https://drive.google.com/file/d/1ZQm8MOLMWDib5M72Z4MmcI2YkC3bVNRF/view?usp=sharing'
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df_nota = pd.read_csv(url,sep=',')
 
@@ -46,7 +46,7 @@ df_dados = pd.read_csv(url,sep=',')
 
 """##Tags"""
 
-url = 'https://drive.google.com/file/d/1utKL4qufR0OmACaAeNubINH5n-Vkb4U2/view?usp=sharing'
+url = 'https://drive.google.com/file/d/1TxfokCC9Si_eQ4OBfhP63wmifRNeyC_w/view?usp=sharing'
 url='https://drive.google.com/uc?id=' + url.split('/')[-2]
 df_tag = pd.read_csv(url,sep=',')
 

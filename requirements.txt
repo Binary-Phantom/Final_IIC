@@ -2,4 +2,3 @@ scikit-learn
 scipy
 tabulate
 streamlit
-config.toml

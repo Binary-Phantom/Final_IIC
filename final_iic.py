@@ -130,7 +130,7 @@ resultado_df.head(30)
 
 """#KNN"""
 
-df_dados.head()
+"""df_dados.head()
 
 df_tag.head()
 

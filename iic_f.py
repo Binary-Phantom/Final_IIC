@@ -18,10 +18,6 @@ from sklearn.metrics import accuracy_score
 import sklearn.metrics.pairwise as pw
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-from scipy.sparse import csr_matrix
-!pip install fuzzywuzzy
-from fuzzywuzzy import process
-from fuzzywuzzy import fuzz
 
 """##Filmes"""
 
